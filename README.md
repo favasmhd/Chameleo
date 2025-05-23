@@ -55,8 +55,6 @@ Chameleo is designed to work with large-scale VOD platform data, specifically:
 * User viewing history (e.g., `user_id`, `video_id`, `viewing_percentage`, `timestamp`)
 * Video metadata (e.g., `video_id`, `genres`, `actors`, `director`, `description`)
 
-*(If you use a specific dataset or have a dataset format, mention it here.)*
-
 ---
 
 ## Results and Impact
