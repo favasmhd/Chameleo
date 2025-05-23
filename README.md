@@ -49,55 +49,6 @@ Chameleo's architecture is centered around robust graph databases and analytical
 
 ---
 
-## Getting Started
-
-Follow these steps to set up and run Chameleo locally.
-
-### Prerequisites
-
-* Python 3.8+
-* `pip` (Python package installer)
-* Recommended: A virtual environment (e.g., `venv` or `conda`)
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/chameleo.git](https://github.com/your-username/chameleo.git)
-    cd chameleo
-    ```
-2.  **Create and activate a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    # On Windows
-    .\venv\Scripts\activate
-    # On macOS/Linux
-    source venv/bin/activate
-    ```
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(You will need to create a `requirements.txt` file listing all Python libraries used, e.g., `networkx`, `pandas`, `scikit-learn`, `leidenalg`, `numpy`, etc.)*
-
-### Usage
-
-*(This section will depend heavily on your project's structure. Here's a generic example.)*
-
-To run the recommendation engine:
-
-1.  **Prepare your data:** Ensure your user-item interaction data and video metadata are in the expected format (e.g., CSV files).
-2.  **Configure settings:** Adjust parameters in `config.py` (or a similar configuration file).
-3.  **Run the main script:**
-    ```bash
-    python main.py --data_path data/interactions.csv --output_path recommendations.json
-    ```
-    *(Provide clear instructions on how to use your main scripts, including example commands and expected input/output.)*
-
-For detailed instructions on running specific modules or generating graphs, refer to the `docs/` folder or relevant script comments.
-
----
-
 ## Data
 
 Chameleo is designed to work with large-scale VOD platform data, specifically:
