@@ -82,3 +82,10 @@ Please ensure your code adheres to the project's coding standards.
 
 * We acknowledge the developers of the `networkx`, `pandas`, and `leidenalg` libraries for their invaluable tools.
 * Special thanks to the research community for their foundational work in recommendation systems and graph theory.
+
+---
+## Co-creators
+
+- [Mohammed Favas](https://github.com/favasmhd)
+- [Muhammed Sinan P K](https://github.com/sinaaannh)
+- [Muhammed Midlaj V](https://github.com/Muhammedmidlaj786)
