@@ -1,5 +1,10 @@
 # 🦎 Chameleo: An Adaptive Recommendation System for Video-on-Demand (VOD) Platforms
 
+## Demo
+![Image](https://github.com/user-attachments/assets/0c6c127a-fd68-49fa-acc6-a95d4e12ccf7)
+![Image](https://github.com/user-attachments/assets/5f7e181b-a145-4b51-a504-7db6ae3bfa90)
+![Image](https://github.com/user-attachments/assets/ef3334e0-66c9-41fd-8cc1-3e75156462c3)
+![Image](https://github.com/user-attachments/assets/1d7ede9d-81a7-4059-a266-b3c539925288)
 
 ## Introduction
 
@@ -12,6 +17,7 @@ In the era of unprecedented digital content growth, particularly in Video-on-Dem
 The rapid expansion of digital content leads to critical issues in recommendation systems, primarily:
 1.  **Data Sparsity:** Many users interact with only a tiny fraction of available content, leading to incomplete interaction data.
 2.  **Cold Start Problem:** New users or new content lack sufficient interaction data for traditional collaborative filtering methods to provide accurate recommendations.
+3.  **Lack of Control:** Users have limited ways to refine or adjust recommendations.
 
 These challenges result in suboptimal recommendations, decreased user engagement, and missed opportunities for content discovery.
 
@@ -19,20 +25,22 @@ These challenges result in suboptimal recommendations, decreased user engagement
 
 ## Solution: Chameleo's Approach
 
-Chameleo proposes a novel, scalable, and structured framework that utilizes an ego-centric perspective on social networks to provide highly relevant and dynamic recommendations. Our system constructs and analyzes intricate graph structures derived from user-item interactions and video similarities, employing sophisticated centrality measures and community detection algorithms.
+Chameleo is a scalable and structured recommendation system that uses an ego-centric view of social networks to deliver more relevant and dynamic suggestions. It builds graphs from user-item interactions and video similarities, then applies centrality measures and community detection to group related content into clusters. Users can choose to opt out of specific clusters, giving them more control to adjust and improve their recommendations over time.
 
 ---
 
 ## Key Features
 
 * **Graph-Based Modeling:**
-    * **User-Item Interaction Graph:** Models connections between users and the content they consume.
-    * **Video Similarity Graph:** Captures relationships between videos based on their features or user co-viewing patterns.
-* **Advanced Centrality Measures:** Integrates various centrality metrics (e.g., Degree, Betweenness, Closeness, Eigenvector, PageRank) to identify influential users and content within the network.
-* **Modularity-Based Clustering:** Employs the **Leiden algorithm** for robust and efficient community detection, enabling the identification of cohesive user groups or content clusters.
-* **Ego-Focused Centrality Index (CEF):** A custom index designed to quantify the importance of an entity (user or video) from an ego-centric viewpoint within its local network.
-* **Ego-Centric Recommendation Score (RSEF):** A unique scoring mechanism that leverages the CEF to generate personalized and contextually relevant recommendations.
-* **Adaptive Recommendation Logic:** The system dynamically adjusts recommendations based on evolving user behavior and content trends.
+
+  * **User-Item Interaction Graph:** Represents connections between users and the content they engage with.
+  * **Video Similarity Graph:** Captures relationships between videos based on features or co-viewing behavior.
+* **Advanced Centrality Measures:** Uses centrality metrics (e.g., Degree, Betweenness, Closeness) to identify key content in the network.
+* **Modularity-Based Clustering:** Applies the **Leiden algorithm** for robust and efficient community detection, identifying strong content clusters.
+* **Ego-Focused Centrality Index (CEF):** A custom metric that measures the importance of a user or video from an ego-centric perspective within its local graph.
+* **Ego-Centric Recommendation Score (RSEF):** A unique scoring system that uses the CEF to generate personalized, context-aware recommendations.
+* **Adaptive Recommendation Logic:** Dynamically updates recommendations based on changing user behavior and content patterns.
+* **User-Controlled Clustering:** Allows users to opt out of specific content clusters, helping fine-tune their recommendation experience.
 
 ---
 
@@ -45,15 +53,15 @@ Chameleo's architecture is centered around robust graph databases and analytical
 4.  **Recommendation Engine:** Calculating CEF and RSEF scores to generate recommendations.
 5.  **API/Integration Layer:** For seamless integration with VOD platforms.
 
-*(A simple block diagram or flow chart here would be highly beneficial if you have one.)*
-
+![Image](https://github.com/user-attachments/assets/f9939da8-b400-4c78-abdd-4957d8c6f1a0)
+![Image](https://github.com/user-attachments/assets/749c9588-43d4-4b82-a055-84765cd70f09)
 ---
 
 ## Data
 
 Chameleo is designed to work with large-scale VOD platform data, specifically:
-* User viewing history (e.g., `user_id`, `video_id`, `viewing_percentage`, `timestamp`)
-* Video metadata (e.g., `video_id`, `genres`, `actors`, `director`, `description`)
+* User viewing history (e.g., `user_id`, `video_id`, `viewing_percentage`)
+* Video metadata (e.g., `video_id`, `tags`, `title`)
 
 ---
 
@@ -81,7 +89,9 @@ Please ensure your code adheres to the project's coding standards.
 ## Acknowledgements
 
 * We acknowledge the developers of the `networkx`, `pandas`, and `leidenalg` libraries for their invaluable tools.
-* Special thanks to the research community for their foundational work in recommendation systems and graph theory.
+* Special thanks to the research community for their foundational work in recommendation systems and graph theory. Project is based on [Network-Based Video Recommendation Using Viewing Patterns and Modularity Analysis: An Integrated Framework][ref1].
+
+[ref1]: https://ieeexplore.ieee.org/document/10830490
 
 ---
 ## Co-creators
