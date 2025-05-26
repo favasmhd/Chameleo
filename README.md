@@ -1,10 +1,11 @@
 # 🦎 Chameleo: An Adaptive Recommendation System for Video-on-Demand (VOD) Platforms
 
 ## Demo
-![Image](https://github.com/user-attachments/assets/0c6c127a-fd68-49fa-acc6-a95d4e12ccf7)
-![Image](https://github.com/user-attachments/assets/5f7e181b-a145-4b51-a504-7db6ae3bfa90)
-![Image](https://github.com/user-attachments/assets/ef3334e0-66c9-41fd-8cc1-3e75156462c3)
-![Image](https://github.com/user-attachments/assets/1d7ede9d-81a7-4059-a266-b3c539925288)
+![Demo](Screenshots/OUTPUT.gif)
+![Login](Screenshots/Login.png)
+![Home](Screenshots/Home.png)
+![Search](Screenshots/Search.png)
+![Preference](Screenshots/Preference.png)
 
 ## Introduction
 
@@ -53,8 +54,8 @@ Chameleo's architecture is centered around robust graph databases and analytical
 4.  **Recommendation Engine:** Calculating CEF and RSEF scores to generate recommendations.
 5.  **API/Integration Layer:** For seamless integration with VOD platforms.
 
-![Image](https://github.com/user-attachments/assets/f9939da8-b400-4c78-abdd-4957d8c6f1a0)
-![Image](https://github.com/user-attachments/assets/749c9588-43d4-4b82-a055-84765cd70f09)
+![Architecture](Screenshots/new_architecture.png)
+![Workflow](Screenshots/Workflow.jpg)
 ---
 
 ## Data
